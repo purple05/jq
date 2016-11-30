@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>jq工具方法</title>
+	<meta charset="utf-8">
+	<script src="jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var oDiv = document.getElementsByTagName('div');
+			var arra = $.makeArray(oDiv);
+			arra.push(888);
+			alert(arra);
+		});
+	</script>
+</head>
+<body>
+	<div>000</div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

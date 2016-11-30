@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>noConflict</title>
+	<script src="jquery-3.1.1.js"></script>
+	<script>
+		$.extend({
+			trimLeft : function(str){
+				return str.replace(/^\s+/,'');
+			}
+		});
+		$(function(){
+			var str = '    aaaaa   ';
+			alert('('+$.trimLeft(str)+')');
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
