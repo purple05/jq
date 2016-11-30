@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>siblings</title>
+	<meta charset="utf-8">
+	<script src="jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// $('span').siblings('em').css('background','red');
+			// $('span').nextAll('em').css('background','red');
+			$('span').prevAll('p').css('background','red');
+		});
+	</script>
+</head>
+<body>
+	<div>div</div>
+	<p>p</p>
+	<span>span</span>
+	<h1>h1</h1>
+	<em>em</em>
+</body>
+</html>

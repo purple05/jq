@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>parents</title>
+	<meta charset="utf-8">
+	<script src="jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// $('#div2').parents('#div1').css('background','red');
+			// $('#div2').parent().css('background','red');
+			$('#div3').closest('div').css('background','red');
+
+		});
+	</script>
+</head>
+<body>
+	<div id="div1">div
+		<div id="div2">div2
+			<p id="div3">p</p> 
+		</div>
+	</div>
+</body>
+</html>
